@@ -58,7 +58,7 @@ public class RecebeDados {
 				c = false;
 			} 
 			catch(InputMismatchException ime){
-				System.out.println("\nTipo de dado inválido.\n");
+				System.out.println("\nTipo de dado invÃ¡lido.\n");
 				scanner.nextLine();
 			}
 		}
@@ -74,7 +74,7 @@ public class RecebeDados {
 		return str;
 	}
 	
-	public void recebeCalorias(){//outof bounds
+	public void recebeCalorias(){
 		double cal = 0.000001;
 		int i = 0;
 		boolean b = true;
@@ -82,7 +82,7 @@ public class RecebeDados {
 		while(b){
 			try{
 				while(cal != 0){
-					System.out.print("Digite quantas mil calorias gastas no " + (i+1) + "º dia da semana: ");
+					System.out.print("Digite quantas mil calorias gastas no " + (i+1) + "Âº dia da semana: ");
 					cal = scanner.nextDouble();
 					c[i] = cal;
 					i++;
@@ -133,7 +133,7 @@ public class RecebeDados {
 		int i;
 		
 		for(i=0; i<(c.length - 1); i++){
-			System.out.println("Calorias gastar no " + (i+1) + "º dia: " + c[i] + " Kcal");
+			System.out.println("Calorias gastar no " + (i+1) + "Âº dia: " + c[i] + " Kcal");
 		}
 	}
 }
